@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">用户反馈</string>
+    <string name="app_pro">遇到问题</string>
+    <string name="app_suggestions">新功能建议</string>
+</resources>

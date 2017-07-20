@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+        <item name="rela_one" type="id">rela_one</item>
+        <item name="rela_tow" type="id">rela_tow</item>
+        <item name="rela_three" type="id">rela_three</item>
+        <item name="rela_add" type="id">rela_add</item>
+        <item name="tv_choose" type="id">tv_choose</item>
+</resources>

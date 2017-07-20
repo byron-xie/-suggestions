@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+   >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:textSize="22sp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rb_group"
+        app:layout_constraintTop_toBottomOf="@+id/tool_bar"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+>
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_pro"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="@string/app_pro"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_sug"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_suggestions"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="请用一句话描述您的问题"
+            android:cursorVisible="true"
+            android:background="@drawable/framedraw"
+            />
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="360dp"
+        android:layout_height="108dp"
+        android:gravity="start"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:hint="在()情况下，我的手机出现了()的异常"
+        android:cursorVisible="true"
+        android:background="@drawable/framedraw"
+        />
+
+
+        <TextView
+            android:id="@+id/tv_app"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/framedraw"
+            android:text="选择模板"/>
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:hint="手机号码"
+        android:cursorVisible="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:inputType="phone"
+        android:background="@drawable/framedraw"
+        />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:hint="邮箱"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:cursorVisible="true"
+        android:background="@drawable/framedraw"
+        />
+    <!--<RelativeLayout-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_image"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_height="80dp" />-->
+    <!--<TextView-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:background="@drawable/circledraw"-->
+        <!--android:textColor="@android:color/holo_orange_dark"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_alignRight="@id/iv_image"-->
+        <!--android:layout_marginRight="2dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:text="X"-->
+        <!--/>-->
+
+<!--</RelativeLayout>-->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/root_view"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="35dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/commitdraw"
+            android:text="提交"/>
+
+    </RelativeLayout>
+</LinearLayout>
